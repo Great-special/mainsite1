@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feed Back</title>
+     <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/jumbotron.css' %}">
+</head>
+<body style="padding:100px;">
+
+<div class="jumbotron">
+    <div class="container">
+        <h3 class="display-3">Delivery Details</h3><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h4> Sender Name: {{sender_name}}</h4>
+                <h4> Sender Address: {{sender_address}}</h4>
+                <h4> Sender Phone No: {{sender_phone_no}}</h4>
+                <h4> Receiver Name: {{receiver_name}}</h4>
+                <h4> Receiver Address: {{receiver_address}}</h4>
+                <h4> Receiver Phone No: {{receiver_phone_no}}</h4>
+                <h4> Package Name: {{package_name}}</h4>
+                <h4> Package Details: {{package_details}}</h4>
+                <h4> Location: {{location_from}} To  {{location_to}}</h4>
+                <h4> Tracking Code: {{tracking_code}}</h4>
+                <button type="submit" class="btn-success"><a href="/">Done!</a> </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

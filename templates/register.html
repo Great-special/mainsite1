@@ -1,0 +1,247 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Registration {% endblock %}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static '/Login/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/fonts/iconic/css/material-design-iconic-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static '/Login/css/main.css' %}">
+<!--===============================================================================================-->
+
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="{% static '/plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static '/plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/plugins/OwlCarousel2-2.2.1/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/main_styles.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/responsive.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+	<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/about.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/about_responsive.css' %}">
+<!--==============================================================================================================-->
+
+
+</head>
+<body>
+ <div class="super_container">
+<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="/">MainSite</a></div>
+							<nav class="main_nav">
+                                <ul class="d-flex flex-row align-items-start justify-content-start">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About us</a></li>
+                                    <li><a href="/fastfood">Food Delivery</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li class="active"><a href="/user/register">Sign In</a></li>
+                                    <li><a href="/user/login">Log In</a></li>
+                                </ul>
+                            </nav>
+							<div class="header_phone ml-auto">Call us: +234 703 207 4053</div>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+			<div class="menu_logo"><a href="/">MainSite</a></div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="about">About us</a></li>
+				<li><a href="fastfood"> Food Delivery</a></li>
+				<li><a href="contact"> Contact</a></li>
+				<li><a href="register"> Sign In</a></li>
+                <li><a href="login"> Log In</a></li>
+			</ul>
+		</div>
+		<div class="menu_social">
+			<div class="menu_phone ml-auto">Call us: +234 703 207 4053</div>
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+ {% block home %}
+
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-85 p-b-20">
+				<form class="login100-form validate-form" method="post">
+                     {% csrf_token %}
+					<span class="login100-form-title p-b-70">
+						Welcome
+					</span>
+					<span class="login100-form-avatar">
+						<img src="{% static '/Login/images/avatar-01.jpg' %}" alt="AVATAR">
+					</span>
+                        <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter first_name">
+                            <input class="input100" type="text" name="first_name">
+                            <span class="focus-input100" data-placeholder="First name"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-t-30 m-b-35" data-validate = "Enter last_name">
+                            <input class="input100" type="text" name="last_name">
+                            <span class="focus-input100" data-placeholder="Last name"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-t-30 m-b-35" data-validate = "Enter username">
+                            <input class="input100" type="text" name="username">
+                            <span class="focus-input100" data-placeholder="Username"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-t-30 m-b-35" data-validate = "Enter email">
+                            <input class="input100" type="text" name="email">
+                            <span class="focus-input100" data-placeholder="E-mail"></span>
+                        </div>
+
+
+						<div class="wrap-input100 validate-input m-t-30 m-b-35" data-validate = "Enter phone no">
+                            <input class="input100" type="text" name="phone no">
+                            <span class="focus-input100" data-placeholder="Phone No"></span>
+                        </div>
+
+						<div class="wrap-input100 validate-input m-t-30 m-b-35" data-validate = "Enter address">
+                            <input class="input100" type="text" name="address">
+                            <span class="focus-input100" data-placeholder="Address"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
+                            <input class="input100" type="password" name="password">
+                            <span class="focus-input100" data-placeholder="Password"></span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" type="submit">
+                                Sign Up
+                            </button>
+                        </div>
+					<ul class="login-more p-t-80">
+						<li>
+							<span class="txt1">
+								Do have an account?
+							</span>
+
+							<a href="/user/login" class="txt2">
+								Sign In
+							</a>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<!--    <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        <input type="text" name="full_name" placeholder="Full Name"><br>-->
+<!--        <input type="text" name="address" placeholder="Address"><br>-->
+<!--        <input type="text" name="phone_no" placeholder="Phone No"><br>-->
+<!--        <input type="text" name="email" placeholder="Email"><br>-->
+<!--        <input type="text" name="password1" placeholder="Password"><br>-->
+<!--        <input type="text" name="password2" placeholder="Confirm"><br>-->
+<!--        <input type="submit" ><br>-->
+<!--    </form>-->
+
+ {% endblock %}
+
+
+<!--===============================================================================================-->
+	<script src="{% static '/Login/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static '/Login/vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static '/Login/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static '/Login/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static '/Login/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static '/Login/vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static '/Login/vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static '/Login/vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static '/Login/js/main.js' %}"></script>
+
+<!--===============================================================================================-->
+<script src="{% static '/js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static '/styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static '/styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static '/plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static '/plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static '/plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static '/plugins/easing/easing.js' %}"></script>
+<script src="{% static '/plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static '/js/custom.js' %}"></script>
+<script src="{% static 'plugins/scrollmagic/ScrollMagic.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/animation.gsap.min.js' %}"></script>
+<script src="{% static 'plugins/greensock/ScrollToPlugin.min.js' %}"></script>
+<script src="{% static 'js/about.js' %}"></script>
+
+
+</body>
+</html>

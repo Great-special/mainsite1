@@ -1,0 +1,36 @@
+{% load crispy_forms_tags %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Ordering Form{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static '/styles/bootstrap4/bootstrap.min.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/jumbotron.css' %}">
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-9">Delivery Form! | Ordering!</h1>
+        <form method="post">
+            {% csrf_token %}
+
+            {{form|crispy}}<br>
+            <p> Dish Name: {{dish_name}} </p>
+
+            <div class="col-md-30px m-t-35">
+                <button type="submit" class="btn-success" >Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>
